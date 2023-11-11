@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 const page = () => {
-  const [title, settitle] = useState("")
+  const [title, settitle] = useState("");
   const [desc, setdesc] = useState("")
   const [maintask, setmaintask] = useState([])
 
