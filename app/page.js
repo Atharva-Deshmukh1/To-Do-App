@@ -13,16 +13,25 @@ const page = () => {
     setdesc("")
   }
 
+  const deletehandler = (i)=>{
+    let copytask = [...maintask]
+    copytask.splice(i,1)
+    setmaintask(copytask)
+  }
   let rendertask = <h2>No Task Available</h2>
 
   if (maintask.length>0) {
     rendertask = maintask.map((t,i)=>{
-      return <li>
+      return (
+        <li key={i}>
         <div className='main'>
         <h5> {t.title} </h5>
         <h6> {t.desc} </h6>
+        <button className='del' onClick = {()=>{deletehandler(i)}}
+        >delete</button>
       </div>
       </li>
+      );
     })
   }
   return (
