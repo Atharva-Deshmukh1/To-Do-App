@@ -11,10 +11,11 @@ body{
   height: 100%;
   width: 100%;
 }
+
 .heading {
   text-align: center;
   width: 100%;
-  height: 200px;
+  height: 50px;
   background: #000;
   color: rgb(255, 252, 252);
 }
@@ -23,24 +24,24 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 600px; */
+  height: 600px;
   width: 100%;
 }
 form{
   background: #f6ebeb;
-  height: 300px;
-  width: 80%;
+  min-height: 300px;
+  width: 50%;
 }
 .form input{
   margin: 50px;
   width: 200px;
-  height: 20px;
+  height: 30px;
 }
 .form button{
   background: #000;
   color: wheat;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 30px;
   cursor: pointer;
 }
 .bottom{
