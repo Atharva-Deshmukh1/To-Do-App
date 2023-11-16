@@ -13,6 +13,7 @@ body{
 }
 
 .heading {
+  padding-top: 20px;
   text-align: center;
   width: 100%;
   height: 50px;
@@ -24,7 +25,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
 form{
@@ -33,11 +34,17 @@ form{
   width: 50%;
 }
 .form input{
-  margin: 50px;
-  width: 200px;
+  margin: 20px;
+  width: 250px;
   height: 30px;
 }
-.form button{
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.add{
   background: #000;
   color: wheat;
   width: 100px;
@@ -45,15 +52,41 @@ form{
   cursor: pointer;
 }
 .bottom{
-  background: #d13333;
+  background: #c4abab;
   height: auto;
   width: 100%;
+  margin-top: 20px;
+  
+  
+}
+.bottom ul{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
 }
 .main{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 5px 40px;
+  flex-wrap: wrap;
+
+}
+.main li{
+  display: flex;
+  justify-content: space-between;
 }
 .del{
-  height: 50px ;
+  height: 30px ;
   width: 100px;
+  align-items: center;
+  background: #000;
+  color: wheat;
+}
+@media (max-width:500px) {
+  form{
+    width: 90%;
+  }
+  .main{
+    justify-content: space-between;
+  }
 }

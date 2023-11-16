@@ -19,7 +19,7 @@ const page = () => {
     copytask.splice(i,1)
     setmaintask(copytask)
   }
-  let rendertask = <h2>No Task Available</h2>
+  let rendertask = <h3>No Task Available</h3>
 
   if (maintask.length>0) {
     rendertask = maintask.map((t,i)=>{
@@ -44,7 +44,7 @@ const page = () => {
         <div className='form'>
 
           <form onSubmit={submithandler}>
-
+          <div className='top'>
             <input placeholder='Enter Title'
               value={title}
               onChange={(e)=>
@@ -59,8 +59,8 @@ const page = () => {
               }>
             </input> */}
 
-            <button>Add Task</button>
-
+            <button className='add'>Add Task</button>
+            </div>
             <div className='bottom'>
               <ul>
                 {rendertask}
